@@ -7,50 +7,40 @@ Follow the steps below to install all necessary dependencies before running the 
 
 Make sure you have a compatible Python version.
 Check your Python version:
-
+```bash
 python --version
-
+```
 2. Create a Virtual Environment (Optional but Recommended)
+```bash
 python -m venv venv
 source venv/bin/activate   # macOS / Linux
 venv\Scripts\activate      # Windows
-
-3. Install Required Library: DeepFace
+```
+4. Install Required Library: DeepFace
 
 To install DeepFace along with all dependencies (TensorFlow, Keras, OpenCV, etc.):
-
+```bash
 pip install deepface
-
-
+```
 This command installs:
 
 DeepFace
-
 TensorFlow (or PyTorch depending on environment)
-
 OpenCV
-
 NumPy
-
 Pandas
-
 RetinaFace / MTCNN (face detectors)
-
 Other required utilities
-
 
 4. Verify Installation
 
 Run the following script to confirm everything works:
-
+```python
 from deepface import DeepFace
-
 result = DeepFace.analyze("your_image.jpg", actions=["emotion"])
 print(result)
-
-
+```
 If no error appears, DeepFace is successfully installed.
-
 You’re Ready to Start!
 
 DeepFace is now installed and configured.
